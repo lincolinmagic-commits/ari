@@ -87,7 +87,7 @@ const ARITechnologyStore = () => {
   };
 
   // API helpers for wishlist and pc builds
-  const API_BASE = 'http://localhost:5000';
+  const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
   // Load products from backend (or demo data) on mount
   useEffect(() => {
